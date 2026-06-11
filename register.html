@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>露比旅行站 - 注册</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="page-header">
+      <div class="sidebar-brand">
+        <div class="brand-icon">R</div>
+        <div>
+          <p class="eyebrow">Good travel</p>
+          <h1>露比旅行站</h1>
+        </div>
+      </div>
+      <p class="live-date" id="currentDate"></p>
+      <nav class="page-nav">
+        <a href="index.html">首页</a>
+        <a class="active" href="register.html">注册</a>
+        <a href="features.html">特色内容</a>
+        <a href="themes.html">主题介绍</a>
+      </nav>
+    </header>
+
+    <main class="register-layout">
+      <section class="page-intro">
+        <span class="tag">用户注册</span>
+        <h2>创建你的旅行档案</h2>
+        <p>本页覆盖需求中的 HTML5 表单控件类型、单选、多选、日期、邮箱、多行文本，以及提交和重置按钮悬停效果。</p>
+      </section>
+
+      <section class="register-card">
+        <form id="registerForm" class="register-form">
+          <div class="field-grid">
+            <label>
+              用户名
+              <input type="text" name="regUsername" maxlength="10" minlength="4" required placeholder="4-10位字符">
+            </label>
+            <label>
+              密码
+              <input type="password" name="regPassword" maxlength="12" minlength="6" required placeholder="至少6位">
+            </label>
+            <label>
+              确认密码
+              <input type="password" name="confirmPassword" maxlength="12" minlength="6" required placeholder="再次输入密码">
+            </label>
+            <fieldset>
+              <legend>性别</legend>
+              <label class="inline-option"><input type="radio" name="gender" value="male" required> 男</label>
+              <label class="inline-option"><input type="radio" name="gender" value="female"> 女</label>
+            </fieldset>
+            <label>
+              出生日期
+              <input type="date" name="birthday" required>
+            </label>
+            <label>
+              个人邮箱
+              <input type="email" name="email" required placeholder="name@example.com">
+            </label>
+          </div>
+
+          <fieldset>
+            <legend>个人兴趣</legend>
+            <div class="check-grid">
+              <label class="inline-option"><input type="checkbox" name="hobby" value="hotel"> 酒店体验</label>
+              <label class="inline-option"><input type="checkbox" name="hobby" value="food"> 美食探店</label>
+              <label class="inline-option"><input type="checkbox" name="hobby" value="photo"> 旅拍摄影</label>
+              <label class="inline-option"><input type="checkbox" name="hobby" value="hike"> 户外徒步</label>
+            </div>
+          </fieldset>
+
+          <label>
+            个人简介
+            <textarea name="bio" rows="5" minlength="20" placeholder="介绍一下你的旅行偏好、想去的地方和出游习惯..." required></textarea>
+          </label>
+
+          <p id="registerMessage" class="form-message" aria-live="polite"></p>
+
+          <div class="form-actions">
+            <button type="submit" class="primary-btn">提交注册</button>
+            <button type="reset" class="ghost-btn">重置表单</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>露比旅行站 - 主题介绍</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <div class="travel-dashboard travel-dashboard-inner">
+    <header class="travel-topbar">
+      <div class="travel-logo">
+        <div class="travel-logo-mark">R</div>
+        <div>
+          <h1>Good travel</h1>
+          <p>Explore the world with Rubie!</p>
+        </div>
+      </div>
+      <div class="travel-searchbar">
+        <span class="search-icon">⌕</span>
+        <input type="text" value="搜索主题、目的地与旅行方式..." aria-label="搜索主题">
+        <button type="button">⌕</button>
+      </div>
+      <nav class="travel-header-links">
+        <a href="index.html">首页</a>
+        <a href="register.html">注册</a>
+        <a href="features.html">我的订单</a>
+        <a href="themes.html">联系客服</a>
+      </nav>
+    </header>
+
+    <div class="travel-body">
+      <aside class="travel-sidebar">
+        <p class="live-date" id="currentDate"></p>
+        <nav class="travel-main-nav">
+          <a href="index.html"><span class="nav-icon">⌂</span><span>首页</span></a>
+          <a href="features.html"><span class="nav-icon">▦</span><span>特色内容</span></a>
+          <a class="active" href="themes.html"><span class="nav-icon">◌</span><span>主题介绍</span></a>
+          <a href="register.html"><span class="nav-icon">✦</span><span>注册资料</span></a>
+          <a href="login.html"><span class="nav-icon">↩</span><span>退出登录</span></a>
+        </nav>
+
+        <div class="travel-side-section">
+          <a class="travel-side-promo active" href="themes.html"><span class="promo-icon">☼</span><span>浪漫海岛</span><b>TOP</b></a>
+          <a class="travel-side-promo" href="themes.html"><span class="promo-icon">▤</span><span>城市漫游</span></a>
+          <a class="travel-side-promo" href="themes.html"><span class="promo-icon">❋</span><span>绿色出行</span></a>
+        </div>
+
+        <div class="travel-illustration-card inner-illustration-card">
+          <div class="travel-illustration-placeholder image-slot" data-slot="sidebar-illustration-themes.png">
+            <img class="ui-placeholder-img" src="assets/images/placeholders/illustration-panel.svg" alt="主题介绍侧边插画占位图" loading="lazy">
+          </div>
+          <p>Theme board</p>
+          <span>这里适合替换海岛主题图、城市横幅图或绿色出行宣传图。</span>
+        </div>
+      </aside>
+
+      <main class="travel-main">
+        <section class="travel-center">
+          <article class="travel-inner-hero theme-inner-hero">
+            <div class="travel-inner-copy">
+              <span class="tag">主题介绍</span>
+              <h2>把首页与特色内容里的服务，再整理成用户容易理解的旅行主题</h2>
+              <p>主题页不再脱离业务，而是把酒店、线路、活动和出行方式统一装进海岛假期、城市漫游、绿色出行三类主线里。</p>
+            </div>
+            <div class="travel-inner-art theme-art-placeholder image-slot" data-slot="theme-banner-image.png">
+              <img class="ui-placeholder-img" src="assets/images/placeholders/banner-wide.svg" alt="主题介绍横幅占位图" loading="lazy">
+            </div>
+          </article>
+
+          <section class="travel-feature-layout">
+            <aside class="travel-feature-menu theme-feature-menu">
+              <h3>主题分类</h3>
+              <a class="theme-link active" href="#theme-romance" data-theme="romance">浪漫海岛</a>
+              <a class="theme-link" href="#theme-city" data-theme="city">城市漫游</a>
+              <a class="theme-link" href="#theme-green" data-theme="green">绿色出行</a>
+            </aside>
+
+            <section class="travel-feature-content themed-panels">
+              <article id="theme-romance" class="theme-panel active" data-theme-panel="romance">
+                <div class="travel-panel-head">
+                  <h3>浪漫海岛假期</h3>
+                  <a href="features.html">关联玩法</a>
+                </div>
+                <p>适合追求阳光、沙滩和慢节奏的人群。你后面可以直接把海岛大图、套餐图和活动图替换进下方占位，不需要改页面结构。</p>
+                <div class="travel-theme-gallery">
+                  <div class="feature-image-placeholder large image-slot" data-slot="theme-romance-cover.png">
+                    <img class="ui-placeholder-img" src="assets/images/placeholders/card-photo.svg" alt="浪漫海岛主题封面占位图" loading="lazy">
+                  </div>
+                  <div class="feature-image-placeholder image-slot" data-slot="theme-romance-sub-01.png">
+                    <img class="ui-placeholder-img" src="assets/images/placeholders/card-photo.svg" alt="浪漫海岛子图一占位图" loading="lazy">
+                  </div>
+                  <div class="feature-image-placeholder image-slot" data-slot="theme-romance-sub-02.png">
+                    <img class="ui-placeholder-img" src="assets/images/placeholders/card-photo.svg" alt="浪漫海岛子图二占位图" loading="lazy">
+                  </div>
+                </div>
+                <div class="theme-points">
+                  <article>推荐城市：三亚、普吉、冲绳</article>
+                  <article>推荐玩法：浮潜、日落晚餐、海边骑行</article>
+                  <article>适合天数：4-6 天</article>
+                </div>
+              </article>
+
+              <article id="theme-city" class="theme-panel" data-theme-panel="city">
+                <div class="travel-panel-head">
+                  <h3>城市漫游计划</h3>
+                  <a href="index.html">回到首页推荐</a>
+                </div>
+                <p>围绕建筑、咖啡馆、展览和夜景，把酒店、餐饮和路线推荐做成一组完整城市漫游服务。切换时保留动画效果，继续满足课程要求。</p>
+                <div class="travel-theme-gallery">
+                  <div class="feature-image-placeholder large image-slot" data-slot="theme-city-cover.png">
+                    <img class="ui-placeholder-img" src="assets/images/placeholders/card-photo.svg" alt="城市漫游主题封面占位图" loading="lazy">
+                  </div>
+                  <div class="feature-image-placeholder image-slot" data-slot="theme-city-sub-01.png">
+                    <img class="ui-placeholder-img" src="assets/images/placeholders/card-photo.svg" alt="城市漫游子图一占位图" loading="lazy">
+                  </div>
+                  <div class="feature-image-placeholder image-slot" data-slot="theme-city-sub-02.png">
+                    <img class="ui-placeholder-img" src="assets/images/placeholders/card-photo.svg" alt="城市漫游子图二占位图" loading="lazy">
+                  </div>
+                </div>
+                <div class="theme-points">
+                  <article>推荐城市：上海、东京、首尔</article>
+                  <article>推荐玩法：街区步行、博物馆、夜游路线</article>
+                  <article>适合天数：2-4 天</article>
+                </div>
+              </article>
+
+              <article id="theme-green" class="theme-panel" data-theme-panel="green">
+                <div class="travel-panel-head">
+                  <h3>绿色低碳之旅</h3>
+                  <a href="features.html">查看内容关联</a>
+                </div>
+                <p>强调公共交通、环保酒店和本地化体验。这里保留动画进度条，同时也提供图像占位，方便后续替换低碳出行相关插画或海报。</p>
+                <div class="travel-theme-gallery">
+                  <div class="feature-image-placeholder large image-slot" data-slot="theme-green-cover.png">
+                    <img class="ui-placeholder-img" src="assets/images/placeholders/card-photo.svg" alt="绿色出行主题封面占位图" loading="lazy">
+                  </div>
+                  <div class="feature-image-placeholder image-slot" data-slot="theme-green-sub-01.png">
+                    <img class="ui-placeholder-img" src="assets/images/placeholders/card-photo.svg" alt="绿色出行子图一占位图" loading="lazy">
+                  </div>
+                  <div class="feature-image-placeholder image-slot" data-slot="theme-green-sub-02.png">
+                    <img class="ui-placeholder-img" src="assets/images/placeholders/card-photo.svg" alt="绿色出行子图二占位图" loading="lazy">
+                  </div>
+                </div>
+                <div class="eco-bars">
+                  <div><span>公共交通利用率</span><b style="width: 82%;"></b></div>
+                  <div><span>可持续住宿比例</span><b style="width: 74%;"></b></div>
+                  <div><span>本地体验参与度</span><b style="width: 91%;"></b></div>
+                </div>
+              </article>
+            </section>
+          </section>
+        </section>
+
+        <aside class="travel-rightbar">
+          <article class="travel-assistant-panel">
+            <div class="travel-assistant-head">
+              <div>
+                <h3>露比主题助手</h3>
+                <span>主题推荐</span>
+              </div>
+              <div class="travel-avatar image-slot" data-slot="assistant-avatar-themes.png">
+                <img class="ui-placeholder-img avatar-placeholder-img" src="assets/images/placeholders/avatar-circle.svg" alt="主题页助手头像占位图" loading="lazy">
+              </div>
+            </div>
+            <div class="travel-chat-box">
+              如果你要做答辩演示，可以从首页进入主题页，再切到特色内容页，形成“主页检索 → 主题筛选 → 内容展开”的完整流程。
+            </div>
+          </article>
+
+          <section class="travel-quick-services">
+            <a href="index.html"><strong>首页业务入口</strong><span>回到首页继续查看热门推荐与搜索入口</span></a>
+            <a href="features.html"><strong>特色内容跳转</strong><span>把主题下沉到路线、美食和影像模块</span></a>
+            <a href="register.html"><strong>用户兴趣映射</strong><span>注册表单里填写的兴趣可用来解释主题推荐逻辑</span></a>
+          </section>
+        </aside>
+      </main>
+    </div>
+  </div>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>

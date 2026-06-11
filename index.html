@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>露比旅行站 - 首页</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <div class="travel-dashboard">
+    <header class="travel-topbar">
+      <div class="travel-logo">
+        <div class="travel-logo-mark">R</div>
+        <div>
+          <h1>Good travel</h1>
+          <p>Explore the world with Rubie!</p>
+        </div>
+      </div>
+      <div class="travel-searchbar">
+        <span class="search-icon">⌕</span>
+        <input type="text" value="搜索目的地、景点、酒店..." aria-label="搜索">
+        <button type="button">⌕</button>
+      </div>
+      <nav class="travel-header-links">
+        <a href="login.html">登录</a>
+        <a href="register.html">注册</a>
+        <a href="features.html">我的订单</a>
+        <a href="themes.html">联系客服</a>
+      </nav>
+    </header>
+
+    <div class="travel-body">
+      <aside class="travel-sidebar">
+        <p class="live-date" id="currentDate"></p>
+        <nav class="travel-main-nav">
+          <a class="active" href="index.html"><span class="nav-icon">⌂</span><span>首页</span></a>
+          <a href="features.html"><span class="nav-icon">▦</span><span>酒店</span></a>
+          <a href="features.html"><span class="nav-icon">✈</span><span>机票</span></a>
+          <a href="features.html"><span class="nav-icon">◫</span><span>火车票</span></a>
+          <a href="themes.html"><span class="nav-icon">◌</span><span>旅游</span></a>
+          <a href="themes.html"><span class="nav-icon">▣</span><span>门票·活动</span></a>
+          <a href="themes.html"><span class="nav-icon">◈</span><span>汽车·船票</span></a>
+          <a href="themes.html"><span class="nav-icon">◎</span><span>用车</span></a>
+        </nav>
+
+        <div class="travel-side-section">
+          <a class="travel-side-promo active" href="features.html"><span class="promo-icon">◍</span><span>露比助手</span><b>NEW</b></a>
+          <a class="travel-side-promo" href="themes.html"><span class="promo-icon">▤</span><span>攻略·景点</span></a>
+          <a class="travel-side-promo" href="themes.html"><span class="promo-icon">⌖</span><span>目的地</span></a>
+          <a class="travel-side-promo" href="themes.html"><span class="promo-icon">⤴</span><span>线路推荐</span></a>
+          <a class="travel-side-promo" href="themes.html"><span class="promo-icon">✦</span><span>旅行商城</span></a>
+          <a class="travel-side-promo" href="themes.html"><span class="promo-icon">▥</span><span>企业商旅</span></a>
+        </div>
+
+        <div class="travel-illustration-card">
+          <div class="travel-illustration-placeholder image-slot" data-slot="sidebar-illustration-home.png">
+            <img class="ui-placeholder-img" src="assets/images/placeholders/illustration-panel.svg" alt="首页侧边插画占位图" loading="lazy">
+          </div>
+          <p>Let's go!</p>
+          <span>从灵感到下单，把整套旅行服务做成一个真正可展示的仪表盘。</span>
+        </div>
+      </aside>
+
+      <main class="travel-main">
+        <section class="travel-center">
+          <article class="travel-hero">
+            <div class="travel-hero-copy">
+              <p class="travel-script">Good travel</p>
+              <h2>和露比一起去旅行！</h2>
+              <p>探索世界的美好，让每一段旅程都值得记忆。首页结构严格按你的设计稿拆成主横幅、业务检索、活动推荐和商品卡片。</p>
+            </div>
+            <div class="travel-hero-visual image-slot" data-slot="hero-mascot-home.png">
+              <div class="travel-cloud cloud-a"></div>
+              <div class="travel-cloud cloud-b"></div>
+              <div class="travel-flight-line"></div>
+              <img class="travel-hero-mascot travel-hero-mascot-img" src="assets/images/placeholders/mascot-circle.svg" alt="首页主视觉吉祥物占位图" loading="lazy">
+            </div>
+
+            <div class="travel-booking-card">
+              <div class="travel-booking-tabs">
+                <button class="active" type="button">酒店</button>
+                <button type="button">机票</button>
+                <button type="button">火车票</button>
+                <button type="button">旅游</button>
+                <button type="button">门票·活动</button>
+              </div>
+              <div class="travel-booking-grid">
+                <div>
+                  <span>目的地/酒店名称</span>
+                  <strong>上海</strong>
+                </div>
+                <div>
+                  <span>入住</span>
+                  <strong>6月10日 今天</strong>
+                </div>
+                <div>
+                  <span>退房</span>
+                  <strong>6月11日 明天</strong>
+                </div>
+                <div>
+                  <span>房间及住客</span>
+                  <strong>1间，1位</strong>
+                </div>
+                <div>
+                  <span>酒店级别</span>
+                  <strong>不限</strong>
+                </div>
+                <div>
+                  <span>关键词（选填）</span>
+                  <strong>机场/火车站/酒店名称</strong>
+                </div>
+                <button class="travel-search-cta" type="button">搜索</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="travel-sale-banner">
+            <div>
+              <span class="sale-badge">618 旅行季</span>
+              <h3>浪漫海岛 · 夏日出发</h3>
+              <p>把图里的活动横幅升级为真实服务入口，支持跳转到特色内容页查看路线、玩法和视频讲解。</p>
+              <a class="travel-light-btn" href="features.html">立即抢购</a>
+            </div>
+            <div class="travel-sale-art image-slot" data-slot="promo-banner-island.png">
+              <img class="ui-placeholder-img sale-art-img" src="assets/images/placeholders/banner-wide.svg" alt="活动横幅插画占位图" loading="lazy">
+            </div>
+          </article>
+
+          <section class="travel-service-highlights">
+            <article>
+              <strong>安心订 放心住</strong>
+              <span>严格审核 · 安全保障</span>
+            </article>
+            <article>
+              <strong>价格保障</strong>
+              <span>买贵赔差 · 放心出行</span>
+            </article>
+            <article>
+              <strong>24小时客服</strong>
+              <span>随时随地 · 贴心服务</span>
+            </article>
+          </section>
+
+          <section class="travel-recommend-panel">
+            <div class="travel-panel-head">
+              <h3>热门推荐</h3>
+              <div>
+                <a href="features.html">精选酒店</a>
+                <a href="themes.html">热门目的地</a>
+                <a href="themes.html">特色玩法</a>
+              </div>
+            </div>
+            <div class="travel-hotel-grid">
+              <article class="travel-hotel-card">
+                <div class="travel-hotel-image hotel-a image-slot" data-slot="hotel-image-01.png">
+                  <img class="ui-placeholder-img" src="assets/images/placeholders/card-photo.svg" alt="上海外滩英迪格酒店图片占位图" loading="lazy">
+                </div>
+                <h4>上海外滩英迪格酒店</h4>
+                <p>豪华型 · 黄浦江夜景 · 步行到外滩</p>
+                <strong>¥1288 起</strong>
+                <span>4.8分 很棒</span>
+              </article>
+              <article class="travel-hotel-card">
+                <div class="travel-hotel-image hotel-b image-slot" data-slot="hotel-image-02.png">
+                  <img class="ui-placeholder-img" src="assets/images/placeholders/card-photo.svg" alt="三亚亚特兰蒂斯酒店图片占位图" loading="lazy">
+                </div>
+                <h4>三亚亚特兰蒂斯酒店</h4>
+                <p>亲海度假 · 水世界直连 · 适合亲子</p>
+                <strong>¥1888 起</strong>
+                <span>4.9分 很棒</span>
+              </article>
+              <article class="travel-hotel-card">
+                <div class="travel-hotel-image hotel-c image-slot" data-slot="hotel-image-03.png">
+                  <img class="ui-placeholder-img" src="assets/images/placeholders/card-photo.svg" alt="成都瑰珀温泉酒店图片占位图" loading="lazy">
+                </div>
+                <h4>成都瑰珀温泉酒店</h4>
+                <p>高档型 · 温泉疗愈 · 周末松弛感</p>
+                <strong>¥988 起</strong>
+                <span>4.7分 很棒</span>
+              </article>
+              <article class="travel-hotel-card">
+                <div class="travel-hotel-image hotel-d image-slot" data-slot="hotel-image-04.png">
+                  <img class="ui-placeholder-img" src="assets/images/placeholders/card-photo.svg" alt="杭州西湖国宾馆图片占位图" loading="lazy">
+                </div>
+                <h4>杭州西湖国宾馆</h4>
+                <p>豪华型 · 湖景安静 · 庭院式体验</p>
+                <strong>¥1588 起</strong>
+                <span>4.8分 很棒</span>
+              </article>
+            </div>
+          </section>
+
+          <section class="travel-mini-tools">
+            <article>
+              <h4>AI行程助手</h4>
+              <p>一键生成出行计划，按预算、天数和人群给方案。</p>
+              <a href="features.html">立即体验</a>
+            </article>
+            <article>
+              <h4>旅行地图</h4>
+              <p>探索全球好去处，把景点、酒店和路线串成地图。</p>
+              <a href="themes.html">开始探索</a>
+            </article>
+            <article>
+              <h4>露比旅行日记</h4>
+              <p>记录每次出发的照片、足迹和旅途故事。</p>
+              <a href="themes.html">去记录</a>
+            </article>
+          </section>
+        </section>
+
+        <aside class="travel-rightbar">
+          <article class="travel-assistant-panel">
+            <div class="travel-assistant-head">
+              <div>
+                <h3>露比小海狸</h3>
+                <span>旅行助手</span>
+              </div>
+              <div class="travel-avatar image-slot" data-slot="assistant-avatar-home.png">
+                <img class="ui-placeholder-img avatar-placeholder-img" src="assets/images/placeholders/avatar-circle.svg" alt="首页助手头像占位图" loading="lazy">
+              </div>
+            </div>
+            <div class="travel-chat-box">
+              Hi，我是露比！你的专属旅行助手来了。想先规划行程、比价酒店，还是看看暑期优惠？
+            </div>
+          </article>
+
+          <section class="travel-quick-services">
+            <a href="features.html"><strong>智能行程规划</strong><span>为你定制专属旅行计划</span></a>
+            <a href="themes.html"><strong>目的地推荐</strong><span>发现最适合你的旅行地</span></a>
+            <a href="themes.html"><strong>旅行小贴士</strong><span>实用攻略与注意事项</span></a>
+            <a href="features.html"><strong>露比陪你聊</strong><span>旅行趣事与互动问答</span></a>
+          </section>
+
+          <article class="travel-footprint-card">
+            <div class="travel-panel-head">
+              <h3>我的旅行足迹</h3>
+              <a href="themes.html">查看全部</a>
+            </div>
+            <div class="travel-footprint-stats">
+              <div><strong>12</strong><span>足迹城市</span></div>
+              <div><strong>5</strong><span>去过国家/地区</span></div>
+              <div><strong>28</strong><span>旅行天数</span></div>
+            </div>
+            <div class="travel-world-map"></div>
+            <p>每一次出发，都是新的故事。</p>
+          </article>
+
+          <section class="travel-offer-panel">
+            <div class="travel-panel-head">
+              <h3>露比的旅行特惠</h3>
+              <a href="features.html">更多优惠</a>
+            </div>
+            <article>
+              <strong>暑期亲子游专场</strong>
+              <span>最高立减 ¥500</span>
+              <a href="features.html">去看看</a>
+            </article>
+            <article>
+              <strong>周边游 · 短途放松</strong>
+              <span>低至 2 折起</span>
+              <a href="themes.html">去看看</a>
+            </article>
+            <article>
+              <strong>机票特惠专区</strong>
+              <span>国内机票 ¥199 起</span>
+              <a href="features.html">去抢票</a>
+            </article>
+          </section>
+        </aside>
+      </main>
+    </div>
+
+    <footer class="travel-footer-services">
+      <article><strong>全球服务</strong><span>覆盖200+国家和地区</span></article>
+      <article><strong>安全保障</strong><span>7×24小时安全守护</span></article>
+      <article><strong>用户信赖</strong><span>1亿+用户的选择</span></article>
+      <article><strong>绿色出行</strong><span>低碳环保 · 可持续旅行</span></article>
+    </footer>
+  </div>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>

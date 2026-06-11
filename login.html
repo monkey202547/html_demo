@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>露比旅行站 - 登录</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <style>
+    body {
+      background:
+        radial-gradient(circle at top left, rgba(255, 182, 212, 0.65), transparent 28%),
+        radial-gradient(circle at bottom right, rgba(255, 221, 232, 0.85), transparent 24%),
+        linear-gradient(145deg, #fff7fb, #fffdfd);
+    }
+  </style>
+</head>
+<body class="login-body">
+  <main class="login-shell">
+    <section class="login-card">
+      <div class="brand-pill">
+        <div class="brand-icon">R</div>
+        <div>
+          <p class="eyebrow">Good travel</p>
+          <h1>露比旅行站</h1>
+          <p class="subtle">和露比一起，开启更轻松的旅程</p>
+        </div>
+      </div>
+      <div class="panel-copy">
+        <span class="tag">HTML5 旅游项目</span>
+        <h2>欢迎登录你的旅行仪表盘</h2>
+        <p>使用统一账号进入系统：用户名为 <strong>html5kc</strong>，密码为 <strong>123456</strong>。</p>
+      </div>
+      <form id="loginForm" class="glass-form" novalidate>
+        <label for="username">用户名</label>
+        <input id="username" name="username" type="text" maxlength="10" placeholder="请输入用户名" required>
+
+        <label for="password">密码</label>
+        <input id="password" name="password" type="password" inputmode="numeric" maxlength="6" pattern="\d{6}" placeholder="请输入6位数字密码" required>
+
+        <p id="loginMessage" class="form-message" aria-live="polite"></p>
+
+        <div class="form-actions">
+          <button type="submit" class="primary-btn">登录</button>
+          <a class="ghost-btn" href="register.html">前往注册</a>
+        </div>
+      </form>
+    </section>
+
+    <aside class="login-showcase">
+      <div class="showcase-card float-card">
+        <p class="eyebrow">今日旅感</p>
+        <h3>春樱、海风与慢旅行</h3>
+        <p>响应式布局会在桌面与移动端之间自动调整，首页、特色内容和主题页都可直接演示。</p>
+      </div>
+      <div class="mini-stats">
+        <article>
+          <strong>12</strong>
+          <span>热门目的地</span>
+        </article>
+        <article>
+          <strong>24h</strong>
+          <span>客服在线</span>
+        </article>
+        <article>
+          <strong>4</strong>
+          <span>核心页面</span>
+        </article>
+      </div>
+    </aside>
+  </main>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>

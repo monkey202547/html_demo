@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>露比旅行站 - 特色内容</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <div class="travel-dashboard travel-dashboard-inner">
+    <header class="travel-topbar">
+      <div class="travel-logo">
+        <div class="travel-logo-mark">R</div>
+        <div>
+          <h1>Good travel</h1>
+          <p>Explore the world with Rubie!</p>
+        </div>
+      </div>
+      <div class="travel-searchbar">
+        <span class="search-icon">⌕</span>
+        <input type="text" value="搜索线路、玩法、城市与酒店..." aria-label="搜索特色内容">
+        <button type="button">⌕</button>
+      </div>
+      <nav class="travel-header-links">
+        <a href="index.html">首页</a>
+        <a href="register.html">注册</a>
+        <a href="features.html">我的订单</a>
+        <a href="themes.html">联系客服</a>
+      </nav>
+    </header>
+
+    <div class="travel-body">
+      <aside class="travel-sidebar">
+        <p class="live-date" id="currentDate"></p>
+        <nav class="travel-main-nav">
+          <a href="index.html"><span class="nav-icon">⌂</span><span>首页</span></a>
+          <a class="active" href="features.html"><span class="nav-icon">▦</span><span>特色内容</span></a>
+          <a href="themes.html"><span class="nav-icon">◌</span><span>主题介绍</span></a>
+          <a href="register.html"><span class="nav-icon">✦</span><span>注册资料</span></a>
+          <a href="login.html"><span class="nav-icon">↩</span><span>退出登录</span></a>
+        </nav>
+
+        <div class="travel-side-section">
+          <a class="travel-side-promo active" href="features.html"><span class="promo-icon">✧</span><span>精选路线</span><b>HOT</b></a>
+          <a class="travel-side-promo" href="features.html"><span class="promo-icon">◈</span><span>城市美食</span></a>
+          <a class="travel-side-promo" href="features.html"><span class="promo-icon">▶</span><span>影像电台</span></a>
+        </div>
+
+        <div class="travel-illustration-card inner-illustration-card">
+          <div class="travel-illustration-placeholder image-slot" data-slot="sidebar-illustration-features.png">
+            <img class="ui-placeholder-img" src="assets/images/placeholders/illustration-panel.svg" alt="特色内容侧边插画占位图" loading="lazy">
+          </div>
+          <p>Feature board</p>
+          <span>这里可以替换成路线插画、城市封面或专题活动图。</span>
+        </div>
+      </aside>
+
+      <main class="travel-main">
+        <section class="travel-center">
+          <article class="travel-inner-hero feature-inner-hero">
+            <div class="travel-inner-copy">
+              <span class="tag">特色内容</span>
+              <h2>把首页里的推荐服务，展开成可继续浏览的业务模块</h2>
+              <p>这一页不再是独立专题页，而是仪表盘里的“服务详情层”。左侧菜单切换路线、美食和影像内容，右侧保留平台助手与订单提示。</p>
+            </div>
+            <div class="travel-inner-art feature-art-placeholder image-slot" data-slot="feature-banner-image.png">
+              <img class="ui-placeholder-img" src="assets/images/placeholders/banner-wide.svg" alt="特色内容横幅占位图" loading="lazy">
+            </div>
+          </article>
+
+          <section class="travel-feature-layout">
+            <aside class="travel-feature-menu">
+              <h3>服务分区</h3>
+              <button class="feature-link active" type="button" data-feature="guide">樱花线路推荐</button>
+              <button class="feature-link" type="button" data-feature="food">城市美食地图</button>
+              <button class="feature-link" type="button" data-feature="media">旅行影像电台</button>
+            </aside>
+
+            <section class="travel-feature-content">
+              <article class="feature-view active" data-feature-panel="guide">
+                <div class="travel-panel-head">
+                  <h3 class="font-face-title">粉樱城市三日游</h3>
+                  <a href="themes.html">查看主题</a>
+                </div>
+                <p>第一天打卡樱花大道与老街，第二天观景列车连湖畔公园，第三天安排温泉旅宿与夜景餐厅。后续你可以直接把路线海报、景点图和地图图替换进下方占位区域。</p>
+                <div class="travel-feature-showcase">
+                  <div class="feature-image-placeholder large image-slot" data-slot="route-cover-image.png">
+                    <img class="ui-placeholder-img" src="assets/images/placeholders/card-photo.svg" alt="路线封面占位图" loading="lazy">
+                  </div>
+                  <div class="feature-image-placeholder image-slot" data-slot="spot-image-01.png">
+                    <img class="ui-placeholder-img" src="assets/images/placeholders/card-photo.svg" alt="景点图片一占位图" loading="lazy">
+                  </div>
+                  <div class="feature-image-placeholder image-slot" data-slot="spot-image-02.png">
+                    <img class="ui-placeholder-img" src="assets/images/placeholders/card-photo.svg" alt="景点图片二占位图" loading="lazy">
+                  </div>
+                </div>
+                <div class="info-cards">
+                  <article><strong>最佳季节</strong><span>3月到4月</span></article>
+                  <article><strong>适合人群</strong><span>情侣 / 闺蜜 / 摄影爱好者</span></article>
+                  <article><strong>推荐预算</strong><span>￥2200 - ￥3600</span></article>
+                </div>
+              </article>
+
+              <article class="feature-view" data-feature-panel="food">
+                <div class="travel-panel-head">
+                  <h3 class="font-face-title">一城一味，跟着香气去旅行</h3>
+                  <a href="index.html">回到首页</a>
+                </div>
+                <p>把城市美食服务做成首页推荐的延展内容。后续可把城市封面、招牌菜和门店照片按占位名直接替换，不需要改动结构。</p>
+                <div class="travel-food-grid">
+                  <article class="travel-food-card">
+                    <div class="feature-image-placeholder image-slot" data-slot="food-city-shanghai.png">
+                      <img class="ui-placeholder-img" src="assets/images/placeholders/card-photo.svg" alt="上海美食封面占位图" loading="lazy">
+                    </div>
+                    <h4>上海</h4>
+                    <p>生煎、小笼、葱油拌面</p>
+                  </article>
+                  <article class="travel-food-card">
+                    <div class="feature-image-placeholder image-slot" data-slot="food-city-chengdu.png">
+                      <img class="ui-placeholder-img" src="assets/images/placeholders/card-photo.svg" alt="成都美食封面占位图" loading="lazy">
+                    </div>
+                    <h4>成都</h4>
+                    <p>火锅、兔头、冰粉</p>
+                  </article>
+                  <article class="travel-food-card">
+                    <div class="feature-image-placeholder image-slot" data-slot="food-city-guangzhou.png">
+                      <img class="ui-placeholder-img" src="assets/images/placeholders/card-photo.svg" alt="广州美食封面占位图" loading="lazy">
+                    </div>
+                    <h4>广州</h4>
+                    <p>早茶、烧腊、双皮奶</p>
+                  </article>
+                </div>
+              </article>
+
+              <article class="feature-view" data-feature-panel="media">
+                <div class="travel-panel-head">
+                  <h3 class="font-face-title">旅行影像电台</h3>
+                  <a href="themes.html">结合主题浏览</a>
+                </div>
+                <p>这里保留课程要求中的自定义媒体控制面板，同时把版心做成仪表盘内容卡。你后面可以把 `poster` 和视频源替换成本地素材。</p>
+                <video id="travelVideo" class="media-player" preload="metadata" poster="image-1781105420035.png">
+                  <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+                  当前浏览器不支持视频播放。
+                </video>
+                <div class="media-controls">
+                  <button type="button" data-action="play">播放</button>
+                  <button type="button" data-action="pause">暂停</button>
+                  <button type="button" data-action="backward">快退 5 秒</button>
+                  <button type="button" data-action="forward">快进 5 秒</button>
+                  <label>音量
+                    <input id="volumeControl" type="range" min="0" max="1" step="0.1" value="0.7">
+                  </label>
+                </div>
+                <p id="mediaStatus" class="form-message">点击按钮开始播放旅行短片。</p>
+              </article>
+            </section>
+          </section>
+        </section>
+
+        <aside class="travel-rightbar">
+          <article class="travel-assistant-panel">
+            <div class="travel-assistant-head">
+              <div>
+                <h3>露比助手</h3>
+                <span>内容导览</span>
+              </div>
+              <div class="travel-avatar image-slot" data-slot="assistant-avatar-features.png">
+                <img class="ui-placeholder-img avatar-placeholder-img" src="assets/images/placeholders/avatar-circle.svg" alt="特色内容助手头像占位图" loading="lazy">
+              </div>
+            </div>
+            <div class="travel-chat-box">
+              你可以先看路线，再切到影像电台做讲解演示，最后回到主题页串联成完整业务流程。
+            </div>
+          </article>
+
+          <section class="travel-quick-services">
+            <a href="index.html"><strong>首页检索入口</strong><span>从仪表盘回到酒店、机票和活动搜索</span></a>
+            <a href="themes.html"><strong>主题联动推荐</strong><span>把特色内容继续归类到海岛、城市与绿色出行</span></a>
+            <a href="register.html"><strong>用户偏好记录</strong><span>在注册页填写兴趣后可映射到内容推荐</span></a>
+          </section>
+        </aside>
+      </main>
+    </div>
+  </div>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
