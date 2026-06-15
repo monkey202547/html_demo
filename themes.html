@@ -8,6 +8,7 @@
 </head>
 <body>
   <div class="travel-dashboard travel-dashboard-inner">
+    <!-- 主题介绍页头部：延续统一站点结构，保证多页面体验一致。 -->
     <header class="travel-topbar">
       <div class="travel-logo">
         <div class="travel-logo-mark">R</div>
@@ -29,8 +30,10 @@
       </nav>
     </header>
 
+    <!-- 主题介绍页主体：左侧主题菜单，右侧主题内容面板。 -->
     <div class="travel-body">
       <aside class="travel-sidebar">
+        <!-- 左侧主题导航：日期、主题分类入口和插画说明。 -->
         <p class="live-date" id="currentDate"></p>
         <nav class="travel-main-nav">
           <a href="index.html"><span class="nav-icon">⌂</span><span>首页</span></a>
@@ -57,6 +60,7 @@
 
       <main class="travel-main">
         <section class="travel-center">
+          <!-- 页面横幅：说明主题页对首页和特色内容页的整合定位。 -->
           <article class="travel-inner-hero theme-inner-hero">
             <div class="travel-inner-copy">
               <span class="tag">主题介绍</span>
@@ -64,10 +68,11 @@
               <p>主题页不再脱离业务，而是把酒店、线路、活动和出行方式统一装进海岛假期、城市漫游、绿色出行三类主线里。</p>
             </div>
             <div class="travel-inner-art theme-art-placeholder image-slot" data-slot="theme-banner-image.png">
-              <img class="ui-placeholder-img" src="assets/images/placeholders/banner-wide.svg" alt="主题介绍横幅占位图" loading="lazy">
+              <img class="ui-placeholder-img" src="assets/images/themes/theme-banner-image.png" alt="主题介绍横幅" loading="lazy">
             </div>
           </article>
 
+          <!-- 主题切换区：按浪漫海岛、城市漫游、绿色出行组织内容。 -->
           <section class="travel-feature-layout">
             <aside class="travel-feature-menu theme-feature-menu">
               <h3>主题分类</h3>
@@ -77,6 +82,7 @@
             </aside>
 
             <section class="travel-feature-content themed-panels">
+              <!-- 浪漫海岛面板：展示主题封面、子图和玩法摘要。 -->
               <article id="theme-romance" class="theme-panel active" data-theme-panel="romance">
                 <div class="travel-panel-head">
                   <h3>浪漫海岛假期</h3>
@@ -85,13 +91,13 @@
                 <p>适合追求阳光、沙滩和慢节奏的人群。你后面可以直接把海岛大图、套餐图和活动图替换进下方占位，不需要改页面结构。</p>
                 <div class="travel-theme-gallery">
                   <div class="feature-image-placeholder large image-slot" data-slot="theme-romance-cover.png">
-                    <img class="ui-placeholder-img" src="assets/images/placeholders/card-photo.svg" alt="浪漫海岛主题封面占位图" loading="lazy">
+                    <img class="ui-placeholder-img" src="assets/images/themes/theme-romance-cover.png" alt="浪漫海岛主题封面" loading="lazy">
                   </div>
                   <div class="feature-image-placeholder image-slot" data-slot="theme-romance-sub-01.png">
-                    <img class="ui-placeholder-img" src="assets/images/placeholders/card-photo.svg" alt="浪漫海岛子图一占位图" loading="lazy">
+                    <img class="ui-placeholder-img" src="assets/images/themes/theme-romance-sub-01.png" alt="浪漫海岛子图一" loading="lazy">
                   </div>
                   <div class="feature-image-placeholder image-slot" data-slot="theme-romance-sub-02.png">
-                    <img class="ui-placeholder-img" src="assets/images/placeholders/card-photo.svg" alt="浪漫海岛子图二占位图" loading="lazy">
+                    <img class="ui-placeholder-img" src="assets/images/themes/theme-romance-sub-02.png" alt="浪漫海岛子图二" loading="lazy">
                   </div>
                 </div>
                 <div class="theme-points">
@@ -101,6 +107,7 @@
                 </div>
               </article>
 
+              <!-- 城市漫游面板：展示城市漫游主题图与相关说明。 -->
               <article id="theme-city" class="theme-panel" data-theme-panel="city">
                 <div class="travel-panel-head">
                   <h3>城市漫游计划</h3>
@@ -109,10 +116,10 @@
                 <p>围绕建筑、咖啡馆、展览和夜景，把酒店、餐饮和路线推荐做成一组完整城市漫游服务。切换时保留动画效果，继续满足课程要求。</p>
                 <div class="travel-theme-gallery">
                   <div class="feature-image-placeholder large image-slot" data-slot="theme-city-cover.png">
-                    <img class="ui-placeholder-img" src="assets/images/placeholders/card-photo.svg" alt="城市漫游主题封面占位图" loading="lazy">
+                    <img class="ui-placeholder-img" src="assets/images/themes/theme-city-cover.png" alt="城市漫游主题封面" loading="lazy">
                   </div>
                   <div class="feature-image-placeholder image-slot" data-slot="theme-city-sub-01.png">
-                    <img class="ui-placeholder-img" src="assets/images/placeholders/card-photo.svg" alt="城市漫游子图一占位图" loading="lazy">
+                    <img class="ui-placeholder-img" src="assets/images/themes/theme-city-sub-01.png" alt="城市漫游子图一" loading="lazy">
                   </div>
                   <div class="feature-image-placeholder image-slot" data-slot="theme-city-sub-02.png">
                     <img class="ui-placeholder-img" src="assets/images/placeholders/card-photo.svg" alt="城市漫游子图二占位图" loading="lazy">
@@ -125,6 +132,7 @@
                 </div>
               </article>
 
+              <!-- 绿色出行面板：展示主题图片并配合动画进度条表现数据。 -->
               <article id="theme-green" class="theme-panel" data-theme-panel="green">
                 <div class="travel-panel-head">
                   <h3>绿色低碳之旅</h3>
@@ -133,13 +141,13 @@
                 <p>强调公共交通、环保酒店和本地化体验。这里保留动画进度条，同时也提供图像占位，方便后续替换低碳出行相关插画或海报。</p>
                 <div class="travel-theme-gallery">
                   <div class="feature-image-placeholder large image-slot" data-slot="theme-green-cover.png">
-                    <img class="ui-placeholder-img" src="assets/images/placeholders/card-photo.svg" alt="绿色出行主题封面占位图" loading="lazy">
+                    <img class="ui-placeholder-img" src="assets/images/themes/theme-green-cover.png" alt="绿色出行主题封面" loading="lazy">
                   </div>
                   <div class="feature-image-placeholder image-slot" data-slot="theme-green-sub-01.png">
-                    <img class="ui-placeholder-img" src="assets/images/placeholders/card-photo.svg" alt="绿色出行子图一占位图" loading="lazy">
+                    <img class="ui-placeholder-img" src="assets/images/themes/theme-green-sub-01.png" alt="绿色出行子图一" loading="lazy">
                   </div>
                   <div class="feature-image-placeholder image-slot" data-slot="theme-green-sub-02.png">
-                    <img class="ui-placeholder-img" src="assets/images/placeholders/card-photo.svg" alt="绿色出行子图二占位图" loading="lazy">
+                    <img class="ui-placeholder-img" src="assets/images/themes/theme-green-sub-02.png" alt="绿色出行子图二" loading="lazy">
                   </div>
                 </div>
                 <div class="eco-bars">
@@ -152,6 +160,7 @@
           </section>
         </section>
 
+        <!-- 右侧辅助区：承接主题解释、页面跳转与业务联动说明。 -->
         <aside class="travel-rightbar">
           <article class="travel-assistant-panel">
             <div class="travel-assistant-head">

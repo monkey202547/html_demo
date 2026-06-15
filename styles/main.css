@@ -1,3 +1,4 @@
+/* 全局设计令牌：统一颜色、阴影、圆角与背景风格。 */
 :root {
   --bg: #fff8fb;
   --panel: rgba(255, 255, 255, 0.86);
@@ -14,11 +15,13 @@
   --radius-md: 18px;
 }
 
+/* 自定义展示字体，用于标题和主题性文案。 */
 @font-face {
   font-family: "TravelDisplay";
   src: local("STXingkai"), local("KaiTi"), local("Segoe Script");
 }
 
+/* 全局基础重置与通用元素样式。 */
 * {
   box-sizing: border-box;
 }
@@ -44,6 +47,7 @@ textarea {
   font: inherit;
 }
 
+/* 登录页与通用壳层布局。 */
 .login-body {
   display: grid;
   place-items: center;
@@ -63,6 +67,7 @@ textarea {
   align-items: stretch;
 }
 
+/* 通用卡片、表单和按钮样式。 */
 .login-card,
 .login-showcase,
 .sidebar,
@@ -733,6 +738,7 @@ legend {
   color: var(--primary);
 }
 
+/* 动画定义：浮动、淡入上移与进度条增长。 */
 @keyframes floatY {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-8px); }
@@ -753,6 +759,7 @@ legend {
   from { width: 0; }
 }
 
+/* 第一组响应式规则：处理登录页、注册页和通用内容区折叠。 */
 @media (max-width: 1180px) {
   .site-shell,
   .hero-grid,
@@ -778,6 +785,7 @@ legend {
   }
 }
 
+/* 第一组移动端规则：处理通用页面在手机端的单列布局。 */
 @media (max-width: 760px) {
   .site-shell,
   .page-shell,
@@ -822,6 +830,7 @@ legend {
   }
 }
 
+/* 首页仪表盘整体容器。 */
 .travel-dashboard {
   width: min(1580px, calc(100% - 20px));
   margin: 14px auto;
@@ -833,6 +842,7 @@ legend {
   box-shadow: 0 20px 45px rgba(244, 91, 147, 0.12);
 }
 
+/* 首页头部、主体和常用网格布局。 */
 .travel-topbar,
 .travel-body,
 .travel-main,
@@ -1481,6 +1491,7 @@ legend {
   background: rgba(255, 255, 255, 0.56);
 }
 
+/* 内页侧边栏与英雄区、内容面板等复用模块。 */
 .travel-dashboard-inner .travel-sidebar {
   gap: 10px;
 }
@@ -1599,6 +1610,7 @@ legend {
   }
 }
 
+/* 第二组响应式规则：处理旅行仪表盘及内页模块折叠。 */
 @media (max-width: 1180px) {
   .travel-topbar,
   .travel-body,
@@ -1629,6 +1641,7 @@ legend {
   }
 }
 
+/* 第二组移动端规则：处理旅行仪表盘在手机端的适配。 */
 @media (max-width: 760px) {
   .travel-dashboard {
     width: calc(100% - 10px);

@@ -1,3 +1,4 @@
+// 渲染页面顶部或侧边栏的当前日期文本，供多个页面复用。
 function setCurrentDate() {
   const dateTargets = document.querySelectorAll("#currentDate");
   if (!dateTargets.length) return;
@@ -9,6 +10,7 @@ function setCurrentDate() {
   });
 }
 
+// 绑定登录表单的提交校验，并在验证通过后跳转到首页。
 function setupLoginForm() {
   const form = document.getElementById("loginForm");
   if (!form) return;
@@ -41,6 +43,7 @@ function setupLoginForm() {
   });
 }
 
+// 绑定注册表单的原生校验、自定义校验和重置提示逻辑。
 function setupRegisterForm() {
   const form = document.getElementById("registerForm");
   if (!form) return;
@@ -79,6 +82,7 @@ function setupRegisterForm() {
   });
 }
 
+// 控制特色内容页左侧菜单与右侧内容面板的切换显示。
 function setupFeatureTabs() {
   const links = document.querySelectorAll(".feature-link");
   if (!links.length) return;
@@ -95,6 +99,7 @@ function setupFeatureTabs() {
   });
 }
 
+// 控制主题介绍页的主题菜单切换，并同步显示对应内容面板。
 function setupThemeTabs() {
   const links = document.querySelectorAll(".theme-link");
   if (!links.length) return;
@@ -112,6 +117,7 @@ function setupThemeTabs() {
   });
 }
 
+// 使用自定义按钮和滑块控制视频的播放、暂停、快进、快退与音量。
 function setupMediaControls() {
   const video = document.getElementById("travelVideo");
   if (!video) return;
@@ -152,6 +158,7 @@ function setupMediaControls() {
   }
 }
 
+// 在文档加载完成后统一初始化各页面需要的交互功能。
 document.addEventListener("DOMContentLoaded", () => {
   setCurrentDate();
   setupLoginForm();

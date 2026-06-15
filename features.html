@@ -8,6 +8,7 @@
 </head>
 <body>
   <div class="travel-dashboard travel-dashboard-inner">
+    <!-- 特色内容页头部：与首页保持一致的品牌、搜索与导航结构。 -->
     <header class="travel-topbar">
       <div class="travel-logo">
         <div class="travel-logo-mark">R</div>
@@ -29,8 +30,10 @@
       </nav>
     </header>
 
+    <!-- 特色内容页主体：左侧栏目导航，右侧业务内容展示。 -->
     <div class="travel-body">
       <aside class="travel-sidebar">
+        <!-- 左侧菜单：日期、栏目入口与插画说明卡。 -->
         <p class="live-date" id="currentDate"></p>
         <nav class="travel-main-nav">
           <a href="index.html"><span class="nav-icon">⌂</span><span>首页</span></a>
@@ -57,6 +60,7 @@
 
       <main class="travel-main">
         <section class="travel-center">
+          <!-- 页面横幅：说明特色内容页与首页业务的承接关系。 -->
           <article class="travel-inner-hero feature-inner-hero">
             <div class="travel-inner-copy">
               <span class="tag">特色内容</span>
@@ -64,10 +68,11 @@
               <p>这一页不再是独立专题页，而是仪表盘里的“服务详情层”。左侧菜单切换路线、美食和影像内容，右侧保留平台助手与订单提示。</p>
             </div>
             <div class="travel-inner-art feature-art-placeholder image-slot" data-slot="feature-banner-image.png">
-              <img class="ui-placeholder-img" src="assets/images/placeholders/banner-wide.svg" alt="特色内容横幅占位图" loading="lazy">
+              <img class="ui-placeholder-img" src="assets/images/features/feature-banner-image.png" alt="特色内容横幅" loading="lazy">
             </div>
           </article>
 
+          <!-- 内容切换区：通过按钮在路线、美食和媒体三个面板间切换。 -->
           <section class="travel-feature-layout">
             <aside class="travel-feature-menu">
               <h3>服务分区</h3>
@@ -77,6 +82,7 @@
             </aside>
 
             <section class="travel-feature-content">
+              <!-- 路线推荐面板：展示路线封面、景点图和摘要信息。 -->
               <article class="feature-view active" data-feature-panel="guide">
                 <div class="travel-panel-head">
                   <h3 class="font-face-title">粉樱城市三日游</h3>
@@ -85,13 +91,13 @@
                 <p>第一天打卡樱花大道与老街，第二天观景列车连湖畔公园，第三天安排温泉旅宿与夜景餐厅。后续你可以直接把路线海报、景点图和地图图替换进下方占位区域。</p>
                 <div class="travel-feature-showcase">
                   <div class="feature-image-placeholder large image-slot" data-slot="route-cover-image.png">
-                    <img class="ui-placeholder-img" src="assets/images/placeholders/card-photo.svg" alt="路线封面占位图" loading="lazy">
+                    <img class="ui-placeholder-img" src="assets/images/features/route-cover-image.png" alt="路线封面" loading="lazy">
                   </div>
                   <div class="feature-image-placeholder image-slot" data-slot="spot-image-01.png">
-                    <img class="ui-placeholder-img" src="assets/images/placeholders/card-photo.svg" alt="景点图片一占位图" loading="lazy">
+                    <img class="ui-placeholder-img" src="assets/images/features/spot-image-01.png" alt="景点图片一" loading="lazy">
                   </div>
                   <div class="feature-image-placeholder image-slot" data-slot="spot-image-02.png">
-                    <img class="ui-placeholder-img" src="assets/images/placeholders/card-photo.svg" alt="景点图片二占位图" loading="lazy">
+                    <img class="ui-placeholder-img" src="assets/images/features/spot-image-02.png" alt="景点图片二" loading="lazy">
                   </div>
                 </div>
                 <div class="info-cards">
@@ -101,6 +107,7 @@
                 </div>
               </article>
 
+              <!-- 城市美食面板：展示不同城市的美食主题图片与文案。 -->
               <article class="feature-view" data-feature-panel="food">
                 <div class="travel-panel-head">
                   <h3 class="font-face-title">一城一味，跟着香气去旅行</h3>
@@ -110,21 +117,21 @@
                 <div class="travel-food-grid">
                   <article class="travel-food-card">
                     <div class="feature-image-placeholder image-slot" data-slot="food-city-shanghai.png">
-                      <img class="ui-placeholder-img" src="assets/images/placeholders/card-photo.svg" alt="上海美食封面占位图" loading="lazy">
+                      <img class="ui-placeholder-img" src="assets/images/features/food-city-shanghai.png" alt="上海美食封面" loading="lazy">
                     </div>
                     <h4>上海</h4>
                     <p>生煎、小笼、葱油拌面</p>
                   </article>
                   <article class="travel-food-card">
                     <div class="feature-image-placeholder image-slot" data-slot="food-city-chengdu.png">
-                      <img class="ui-placeholder-img" src="assets/images/placeholders/card-photo.svg" alt="成都美食封面占位图" loading="lazy">
+                      <img class="ui-placeholder-img" src="assets/images/features/food-city-chengdu.png" alt="成都美食封面" loading="lazy">
                     </div>
                     <h4>成都</h4>
                     <p>火锅、兔头、冰粉</p>
                   </article>
                   <article class="travel-food-card">
                     <div class="feature-image-placeholder image-slot" data-slot="food-city-guangzhou.png">
-                      <img class="ui-placeholder-img" src="assets/images/placeholders/card-photo.svg" alt="广州美食封面占位图" loading="lazy">
+                      <img class="ui-placeholder-img" src="assets/images/features/food-city-guangzhou.png" alt="广州美食封面" loading="lazy">
                     </div>
                     <h4>广州</h4>
                     <p>早茶、烧腊、双皮奶</p>
@@ -132,6 +139,7 @@
                 </div>
               </article>
 
+              <!-- 媒体面板：提供自定义视频控制演示，满足考查中的多媒体要求。 -->
               <article class="feature-view" data-feature-panel="media">
                 <div class="travel-panel-head">
                   <h3 class="font-face-title">旅行影像电台</h3>
@@ -157,6 +165,7 @@
           </section>
         </section>
 
+        <!-- 右侧辅助区：展示助手说明与跨页面业务跳转入口。 -->
         <aside class="travel-rightbar">
           <article class="travel-assistant-panel">
             <div class="travel-assistant-head">
